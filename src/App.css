@@ -1,0 +1,121 @@
+:root {
+    --box-shadow: 0px 1px 4px 1px rgba(199,199,199,1);
+    --income: rgb(12, 95, 12);
+    --expense: red;
+}
+
+
+
+body {
+    background: radial-gradient(ellipse at top, #e66465,transparent),
+    radial-gradient(ellipse at bottom, #4d9f0c,transparent);
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.balance-val {
+    
+    font-size: 30px;
+    color: rgb(14, 13, 13);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.col h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.row-expense {
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+    width: 240px;
+}
+
+.col-income, .col-expense {
+    padding: 20px;
+}
+
+.col-expense {
+    padding-left: 10px;
+}
+
+.col-income span {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding-right: 30px;
+}
+
+.income-text {
+    color: var(--income);
+}
+
+.expense-text {
+    color: var(--expense);
+}
+
+.transactions, .transactions li {
+    padding: 0;
+    margin: 0;
+}
+
+.transactions li {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.transactions li div {
+    margin-right: 10px;
+}
+
+.transactions li span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-form input {
+    width: 97%;
+    height: 25px;
+}
+
+.transaction-form label {
+    margin-bottom: 10px;
+}
+
+.transaction-form button {
+    height: 30px;
+    margin-bottom: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+}
+
+.income-btn {
+    background-color: var(--income);
+}
+
+.expense-btn {
+    background-color: var(--expense);
+}
